@@ -165,7 +165,7 @@ namespace TicTacToeGameConsole
                 break;
             }
 
-            if (intARowWin < 4)
+            if (intARowWin < _winInARow - 1)
             {
                 for (int i = row - 1, j = col + 1; i >= 0 && j < gameBoard.GetLength(1); i--, j++)
                 {
@@ -195,7 +195,7 @@ namespace TicTacToeGameConsole
                 break;
             }
 
-            if (intARowWin < 4)
+            if (intARowWin < _winInARow - 1)
             {
                 for (int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--)
                 {
@@ -225,7 +225,7 @@ namespace TicTacToeGameConsole
                 break;
             }
 
-            if (intARowWin < 4)
+            if (intARowWin < _winInARow - 1)
             {
                 for (int i = row - 1; i >= 0; i--)
                 {
@@ -255,7 +255,7 @@ namespace TicTacToeGameConsole
                 break;
             }
 
-            if (intARowWin < 4)
+            if (intARowWin < _winInARow - 1)
             {
                 for (int i = col - 1; i >= 0; i--)
                 {
